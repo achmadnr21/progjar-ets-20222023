@@ -1,0 +1,46 @@
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+
+
+Server Software:        myserver/1.0
+Server Hostname:        localhost
+Server Port:            8443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+Server Temp Key:        X25519 253 bits
+TLS Server Name:        localhost
+
+Document Path:          /testing.txt
+Document Length:        22 bytes
+
+Concurrency Level:      150
+Time taken for tests:   328.644 seconds
+Complete requests:      1000
+Failed requests:        345
+   (Connect: 0, Receive: 0, Length: 261, Exceptions: 84)
+Total transferred:      118137 bytes
+HTML transferred:       16346 bytes
+Requests per second:    3.04 [#/sec] (mean)
+Time per request:       49296.547 [ms] (mean)
+Time per request:       328.644 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.35 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0 4239 10251.6    862   86777
+Processing:   206 37640 64451.7   1122  263961
+Waiting:        0  975 1052.7    688    6104
+Total:        371 41879 62895.9   4997  263961
+
+Percentage of the requests served within a certain time (ms)
+  50%   4997
+  66%  15740
+  75%  110703
+  80%  110757
+  90%  139368
+  95%  139407
+  98%  217082
+  99%  217084
+ 100%  263961 (longest request)
